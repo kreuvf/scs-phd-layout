@@ -1,0 +1,9 @@
+% Parent document is Pages.tex
+% !TeX root= ../Pages.tex
+
+% load packages
+	% word-like appearance
+	\usepackage{wordlike}
+
+	% misc packages
+	\usepackage{hyperref}

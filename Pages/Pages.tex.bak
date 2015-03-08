@@ -1,0 +1,10 @@
+\documentclass[a4paper, 12pt]{scrbook}
+% load required packages from /Extras/header.tex
+\input{Extras/header.tex}
+
+
+	\begin{document}
+	\tableofcontents
+	\newpage
+	\input{Chapter/chapter1.tex}
+	\end{document}
