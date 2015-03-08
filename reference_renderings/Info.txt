@@ -1,0 +1,2 @@
+This directory contains reference renderings (and the corresponding 'source' files) for Microsoft Word 2010.
+
