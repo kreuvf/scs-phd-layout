@@ -1,0 +1,468 @@
+﻿Running text (ML)
+=================
+* Page
+	* top border: 2.5 cm
+	* right border: 2.5 cm
+	* bottom border: 2.0 cm
+	* left border: 2.5 cm
+	* Border bottom: underlined line
+	* Position
+		* from above 1.25 cm
+		* Height: first line
+		* space from running text: new line
+	* Even number
+		* header
+			* left: page number
+			* right: chapter number, chapter title
+		* footer: none
+	* Odd number
+		* header
+			* left: chapter number, chapter title
+			* right: page number
+		* footer: none
+* Font: Times New Roman
+* Font size: 11
+* Alignment: justify
+* Line spacing: exactly 17 Pt.
+* Headline 1
+	* Font: Times (bold)
+	* Font size: 15 Pt.
+	* Alignment: left
+	* Line spacing before: no specification given
+	* Line spacing: afterwards 15 Pt.
+	* line spacing: exactly 19 Pt.
+	* Indentoin: 0.63 cm hanging
+* Headline 2
+	* Font: Times (bold)
+	* Font size: 14 Pt.
+	* Alignment: left
+	* Line spacing before: 18 Pt.
+	* Line spacing: afterwards 5 Pt.
+	* line spacing: exactly 17 Pt.
+	* Indentoin: 1,02 cm hanging
+* Headline 3
+	* Font: Times (bold)
+	* Font size: 13 Pt.
+	* Alignment: justify
+	* Line spacing before: 18 Pt.
+	* Line spacing: afterwards 3 Pt.
+	* line spacing: exactly 15 Pt.
+	* Indentoin: 1,27 cm hanging
+* Headline 4
+	* Font: Times (bold)
+	* Font size: 12
+	* Alignment: left
+	* Line spacing before: 18 Pt.
+	* Line spacing: afterwards 3 Pt.
+	* line spacing: exactly 13.5 Pt.
+	* Indentoin: 1,52 cm hanging
+* Headline 5
+	* Font: Times New Roman (bold)
+	* Font size: 11
+	* Alignment: left
+	* Line spacing before: 18 Pt.
+	* Line spacing: afterwards 3 Pt.
+	* line spacing: exactly 17 Pt.
+	* Indentoin: 1,78 cm hanging
+* run-in heading
+	* no specification given
+
+Foot notes (ML)
+===============
+* Footnote reference in Text
+	* Font: Times New Roman
+	* Font size: 11
+	* hochgestellt
+* Footnote
+	* Font: Arial (italic)
+	* Font Size: 9.5 Pt.
+	* Space from running text: new line
+	* Alignment: left
+	* line spacing: exactly 17 Pt.
+
+Lists (SK)
+==========
+* Font: like running text
+* Font size: like running text
+* Alignment: like running text
+* Line spacing: like running text
+* Text always has hanging indent.
+* Level 1 (unordered list):
+	* bullet point after 0.63 cm
+	* text starts after 1.27 cm
+	* bullet point: font Symbol (big black filled point, ~o-sized, U+00B7)
+* Level 2 (unordered list):
+	* bullet point after 1.9 cm
+	* text starts after 2.54 cm
+	* bullet point: font Courier New (small o, U+006F)
+* Level 3 (unordered list):
+	* bullet point after 3.17 cm
+	* text starts after 3.81 cm
+	* bullet point: font Wingdings (small black square filled, U+00A7)
+* Level 4 (unordered list):
+	* bullet point after 4.44 cm
+	* text starts after 5.08 cm
+	* bullet point: font Symbol (big black filled point, ~o-sized, U+00B7)
+* Level 5 (unordered list):
+	* bullet point after 5.71 cm
+	* text starts after 6.35 cm
+	* bullet point: font Courier New (small o, U+006F)
+* Level 6 (unordered list):
+	* bullet point after 6.98 cm
+	* text starts after 7.62 cm
+	* bullet point: font Wingdings (small black square filled, U+00A7)
+* Level 7 (unordered list):
+	* bullet point after 8.25 cm
+	* text starts after 8.89 cm
+	* bullet point: font Symbol (big black filled point, ~o-sized, U+00B7)
+* Level 8 (unordered list):
+	* bullet point after 9.52 cm
+	* text starts after 10.16 cm
+	* bullet point: font Courier New (small o, U+006F)
+* Level 9 (unordered list):
+	* bullet point after 10.79 cm
+	* text starts after 11.43 cm
+	* bullet point: font Wingdings (small black square filled, U+00A7)
+* no specification for ordered lists available
+* ordered list found on p. 180 of vol. 1, only for level 1
+* Level 1 (ordered list):
+	* number followed by a dot
+	* text starts after 0.625 cm (hanging indent)
+
+Figures (SK)
+============
+* Figure
+	* Font in figures: Arial
+	* Font size in figures: not specified
+	* Border: no border around figures
+* Caption
+	* Position relative to figure: below figure
+	* Space between figure and caption: 1.15 pt (= line spacing of running text)
+	* Line spacing: exactly 11 pt
+	* Font: Arial (Italics)
+	* Font size: 9.5 pt
+	* Numbering scheme: $chapter.$number-of-figure-in-chapter
+		* Example: third figure in fifth chapter: 5.3
+	* Caption text: Fig. $numbering:
+	* Caption paragraph layout
+		* Paragraph indentation: hanging indent (1.38 cm); meaning: lines below the first line start 1.38 cm indented from the left border
+		* Actual figure caption starts after a tab at 1.38 cm
+		* Sources are put into a new line into round brackets
+
+Tables (ugly) (ML)
+==================
+* if text after table put new line (presumably 15 Pt.)
+* if headline after table no new line
+* Font: Arial
+* Font size: no specification given
+* Minimum table
+	* rows: 4 (x)
+	* columns: 4 (y)
+* Borders inside: (annotations: x, y)
+	* cell 1-2, 1; cell 3,2; cell 3, 3
+		* border bottom colour: black
+		* border bottom: 2 1/4 Pt. 
+		* border right colour: black
+		* border right: 2 1/4 Pt.
+* cell 2,2; cell 3,2; cell 4, 2
+		* border bottom colour: black
+		* border bottom: 2 1/4 Pt. 
+		* border right colour: black
+		* border right: 2 1/4 Pt.
+* Table headline
+	* cell 3-4, 1
+	* border top: none
+	* border right: black, 1/2 Pt.
+	* border bottom: black, 1/2 Pt.
+	* border left: black, 2 1/4 Pt.
+* row lable
+	* cell 2, 3; cell 2, 4
+	* Font: Arial
+	* Font size: fire at will
+	* position vertical: centre
+	* position horizontal: centre
+column lable
+	* cell 3, 2; cell 4, 2
+	* Font: Arial
+	* Font size: fire at will
+	* position vertical: centre
+	* position horizontal: centre
+* Borders outside
+	* top border: none
+	* right border: black, 1/2 Pt.
+	* Bottom border: black, 1/2 Pt.
+	* left border: none
+* Table Label
+	* Font: Arial
+	* Font size: 9.5 Pt.
+	* Text decoration: italic
+	* Alignment: left
+	* special indention: 1.38 cm (hängend)
+	* line spacing before: 18 Pt.
+	* line spacing afterwards: 
+	* line spacing: exactly 11 Pt.
+	* Number: consecutive
+	* Number-Label space: 1.7 cm
+
+Tables (beautiful) (ML) (from LaTeX-Masterarbeit ML)
+====================================================
+* Minimum table
+	* rows: 2 (x)
+	* columns: 2 (y)
+* Table head (cell (x,y))
+	* Font: like running text
+	* text decoration: bold
+	* Aligment horizontal: centre
+	* Alignment vertical: centre (if values, decimal separator)
+	* cell 1,1; cell 2,1
+	* border top: black, 1 Pt.
+	* border bottom: black, 1 Pt.
+	* border left: none
+	* border right: none
+* Table body
+	* no borders between rows and columns
+	* Font: like running text
+	* text decoration: regular
+	* Aligment horizontal: centre
+	* Alignment vertical: centre (if values, decimal separator, or +/- if standard deviation given)
+	* cell 1,2; cell 2,2
+	* border top: black, 1 Pt.
+	* border bottom: black, 1 Pt.
+	* border left: none
+	* border right: none
+* Tables @ Schriftenreihe 10
+	* Top border: black, estimated 2 Pt.
+	* Border bottom: black, estimated 2 Pt.
+	* Border between rows and columns: none
+	* table head: border bottom: black, estimated 1 Pt.
+	* table head
+		* Font: ?
+		* Font size: ?
+		* Text decoration: bold
+		* Aligment horizontal: centre
+		* Alignment vertical: centre
+	* table body
+		* Font: ?
+		* Font size: ?
+		* Text decoration: regular
+		* Aligment horizontal: centre
+		* Alignment vertical: centre
+
+Formulae (SK)
+=============
+* No specification given; formulae found in 1 (p. 162), 6 (p. 52) and 10 (p. 91), all different
+* Use LaTeX defaults for typesetting of formulae
+* single or several, but unrelated formulae
+	* margin on the right reserved for optional numbering
+	* numbering scheme: $chapter.$number-of-formula-in-chapter
+		* Example: seventeenth formula in third chapter: 3.17
+	* formula number is enclosed in round brackets
+	* formulae are centered
+		* when numbered: center of left side and right side - margin reserved for numbering
+		* when not numbered: "normally" centered
+* several related formulae in an uninterrupted block
+	* if sensible align relation operators (equal sign & co.)
+	* if relation operators are aligned, center the longest line
+		* when numbered: center of left side and right side - margin reserved for numbering
+		* when not numbered: "normally" centered
+	* if relation operators are not aligned, center each line separately
+		* when numbered: center of left side and right side - margin reserved for numbering
+		* when not numbered: "normally" centered
+
+Source code listings (SK)
+=========================
+* No specification given; no examples found
+* Use package listings
+* Do not put frames around source code listings by default
+* Do not use colour (for print version)
+* Input source code files using \lstinputlisting{}
+* Use caption parameter and this numbering scheme: $chapter.$number-of-source-code-listing-in-chapter
+	* Example: Eighth listing in second chapter: 2.8
+* Always number lines
+* Caption
+	* Position relative to listing: above listing
+	* Space between listing and caption: 1.15 pt (= line spacing of running text)
+	* Line spacing: exactly 11 pt
+	* Font: Arial (Italics)
+	* Font size: 9.5 pt
+	* Caption text: Listing $numbering:
+	* Caption paragraph layout
+		* Paragraph indentation: hanging indent (1.38 cm); meaning: lines below the first line start 1.38 cm indented from the left border
+		* Actual figure caption starts after a tab at 1.38 cm
+		* Sources (=references) are put into a new line into round brackets
+
+Table of contents (ML)
+======================
+* Table of contents headline
+	* Alignment: centre
+	* Font: Times New Roman
+	* Font size: 15.5 Pt.
+	* Space before: 0 Pt.
+	* Space afterwards: 15 Pt.
+	* Line spacing: at least 13.5 Pt.
+* Headings general
+	* Font: Times New Roman
+	* Alignment: left
+	* Page Number: right, 15.98 cm from left border
+	* Filled with dots (for a nice version see Schriftenreihe 1, p. 11)
+* Heading 1
+	* Font: Times new Roman (bold)
+	* Font size: 12 Pt.
+	* Indention: 0 cm
+	* special indention: 0.5 cm (hanging)
+	* Space before: 15 Pt.
+	* Space afterwards: 12 Pt.
+	* Line spacing: single
+* Heading 2
+	* Font: Times new Roman (bold)
+	* Font size: 11 Pt.
+	* Indention: 0.25 cm
+	* special indention: 0.75 (hanging)
+	* Space before: 3 Pt.
+	* Space afterwards: 6 Pt.
+	* Line spacing: single
+* Heading 3
+	* Font: Times New Roman regular
+	* Font size: 11 Pt.
+	* Indention: 1.25 cm
+	* special indention: 0.75 (hanging)
+	* Space before: 0 Pt.
+	* Space afterwards: 0 Pt.
+	* Line spacing: single
+* Heading 4
+	* Font: Times New Roman (regular)
+	* Font size: 11 Pt.
+	* Indention: 2.5 cm
+	* special indention: 1.5 cm (hanging)
+	* Space before: 0 Pt.
+	* Space afterwards: 0 Pt.
+	* Line spacing: single
+* Heading 5
+	* Font: Times New Roman (regular)
+	* Font size: 11 Pt.
+	* Indention: 1.0 cm
+	* special indention: first line 3.0 cm (hanging)
+	* Space before: 0 Pt.
+	* Space afterwards: 0 Pt.
+	* Line spacing: single
+* Appendix
+	* like Heading 1
+	* no number
+* List of abbreviations (under Appendix A, B, C ...)
+	* Font: Times New Roman (bold)
+	* Font size: 11 Pt.
+	* Indention: 0.5 cm
+	* special indention: 0.75 cm (hanging)
+	* Space before: 3 Pt.
+	* Space afterwards: 6 Pt.
+	* Line spacing: single
+* List of figures
+	* see List of abbreviations
+* List of tables
+	* see List of abbreviations
+
+List of abbreviations (SK)
+==========================
+* No specification given; examples found in 4 (p. 136), 6 (p. 171) and 10 (p. 13), all different
+* Separate variables in formulae and real abbreviations
+* Sort variable names in the order latin-greek-arabic-other, give corresponding units (commonly used and with SI units only)
+* Overall sort order:
+	* Abbreviations
+	* Microorganisms (S. cerevisiae --> Saccharomyces cerevisiae; in material and methods mentioned again)
+	* Latin symbols
+	* Greek symbols
+	* Arabic symbols
+	* Other symbols
+	* Units
+* One-column layout
+* Abbreviations, symbols and units: alphabetically sorted list of abbreviations with corresponding explanations
+	* Paragraph indentation: hanging indent 2.53 cm
+	* Abbreviation
+	* Explanation starts after a tab at 2.53 cm
+* Each part is separated from the others via a heading (of matching level, usually 2)
+
+List of figures (SK)
+====================
+* Specification available, examples found in 1 (p. 325), 4 (p. 137) and 6 (p. 174); all examples are different
+* Line spacing: at least 13.5 pt
+* Font: Times New Roman
+* Font size: 10 pt
+* Numbering scheme: $chapter.$number-of-figure-in-chapter
+	* Example: third figure in fifth chapter: 5.3
+* Entry text:
+	* Fig. $numbering:
+	* tab at 1.75 cm
+	* Figure heading (whole text = you are doing it wrong; define short texts for list entries)
+	* Dots (auto-generated)
+	* Page number
+	* tab (aligned right) at 16 cm (page width)
+	* Paragraph indentation: hanging indent (1.75 cm); meaning: lines below the first line start 1.75 cm indented from the left border
+
+List of tables (SK)
+===================
+* Specification available, examples found in 1 (p. 329), 4 (p. 139) and 6 (p. 179); all examples are different
+* Line spacing: at least 13.5 pt
+* Font: Times New Roman
+* Font size: 10 pt
+* Numbering scheme: $chapter.$number-of-table-in-chapter
+	* Example: third table in fifth chapter: 5.3
+* Entry text:
+	* Tab. $numbering:
+	* tab at 1.75 cm
+	* Table heading (whole text = you are doing it wrong; define short texts for list entries)
+	* Dots (auto-generated)
+	* Page number
+	* tab (aligned right) at 16 cm (page width)
+	* Paragraph indentation: hanging indent (1.75 cm); meaning: lines below the first line start 1.75 cm indented from the left border
+
+List of source code listings (SK)
+=================================
+* no specification found, not examples found
+* Basic rule: list should be geared towards other lists
+* Line spacing: at least 13.5 pt
+* Font: Times New Roman
+* Font size: 10 pt
+* Numbering scheme: $chapter.$number-of-listing-in-chapter
+	* Example: third listing in fifth chapter: 5.3
+* Entry text:
+	* Listing $numbering:
+	* tab at 2.5 cm
+	* Table heading (whole text = you are doing it wrong)
+	* Dots (auto-generated)
+	* Page number
+	* tab (aligned right) at 16 cm (page width)
+	* Paragraph indentation: hanging indent (2.5 cm); meaning: lines below the first line start 2.5 cm indented from the left border
+
+References (SK)
+===============
+* Specification found, examples found in all volumes; all different
+	* Journal Article: $Author ($Year): $Title. In: $Journal, Vol. $Volume, $Issue, p. $Pages.
+	* Book: $Author ($Year): $Title. $Edition, $Publisher: $City.
+	* Thesis: $Author ($Year): $Title. $Thesis_Type, $University, $City.
+	* Conference Proceedings: $Author ($Year_of_Conference): $Title. $Conference_Name, $Date, $Conference_Location, $Publisher.
+	* Book Section: $Author ($Year): $Title. In: $Editor (Ed.) $Book_Title. $Edition, $Publisher: $City, p. $Pages.
+	* Edited Book: $Editor (Ed.) ($Year): $Title. $Series_Title. $Publisher: $City.
+	* Report: $Author ($Year): $Title. $Series_Title, $Report_Number. $Institution. $City.
+	* Web Page: $Author ($Year): $Title. $Series_Title. $Edition. Online: $URL. (accessed: $Access_Date).
+	* Electronic Article: $Author ($Year): $Title. In: $Periodical_Title, $Volume, $Issue.
+	* Generic: $Author ($Year): $Title. $Secondary_Title. $Secondary_Author. $Publisher: $Place_Published. $Volume, $Pages
+	* $Author[n]: $Last_name[0], $First_name[0], ... , $Last_name[n-1], $First_name[n-1] and $Last_name[n], $First_name[n]; small caps
+	* $First_name: Abbreviation for the first name(s)
+* Modifications
+	* Add DOI, if available.
+	* Give issue of a specific volume in the form $Volume:$Issue.
+	* DOI comes last: doi:$DOI and $DOI contains a link to the DOI resolver.
+* List references alphabetically.
+* Additional distance between two entries: 3 pt
+* Line spacing: exactly 17 pt
+* Paragraph indent: hanging indent 0.75 cm
+
+Citation style (SK)
+===================
+* Specification found, examples in all volumes; 1 & 6 same, 4 and 10 different
+	* One author: ($Last_name $Year)
+	* Two authors: ($Last_name[0] & $Last_name[1] $Year)
+	* Three+ authors: ($Last_name[0] et. al $Year)
+	* "et. al" in italics
+* $Last_name is styled as small caps
+* Separator for several references: "," (not as specified :P)
