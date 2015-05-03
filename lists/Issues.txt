@@ -1,0 +1,3 @@
+Known Issues with Lists
+=======================
+* Nested itemize lists will have some additional spacing between the current item of the parent list and the start of the nested list

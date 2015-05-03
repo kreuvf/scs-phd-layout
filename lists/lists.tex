@@ -1,0 +1,96 @@
+\documentclass[11pt,a4paper]{article}
+
+% \XeTeX command
+\usepackage{metalogo}
+
+% Make frame visible (only for debug purposes)
+\usepackage{showframe}
+
+% Emulate MS Word
+\usepackage{wordlike}
+\usepackage[none]{hyphenat} % Word does not automatically hyphenate
+\def\hyph{-\penalty0\hskip0pt\relax} % Word breaks words with hyphens automatically, LaTeX does not; define \hyph to achieve this behaviour in LaTeX as well; use '\hyph{}' to replace hyphens in words if you want LaTeX to break at this hyphen
+\frenchspacing % No additional spacing after end of sentence
+
+% One inch margins
+%\PassOptionsToPackage{margin=1in,a4paper}{geometry}
+
+% Font selection
+\usepackage{fontspec}
+\setmainfont[Mapping=tex-text]{Times New Roman}
+
+% Remove footnote indentation
+\usepackage[hang,flushmargin]{footmisc} 
+
+% Redefine lists
+\setlength{\leftmargini}{1.27cm} % Must be placed in preamble and outside list environment
+\setlength{\leftmarginii}{1.27cm} % Must be placed in preamble and outside list environment
+\setlength{\leftmarginiii}{1.27cm} % Must be placed in preamble and outside list environment
+\setlength{\leftmarginiv}{1.27cm} % Must be placed in preamble and outside list environment
+\renewcommand{\labelitemi}{\raisebox{-0.42ex}{\LARGE{•}}}
+\newfontfamily\myfont{Courier New} % Needed for bullet point of second level
+\renewcommand{\labelitemii}{{\raisebox{0.23ex}{{\myfont{o}}}}\hspace{-0.3mm}} % raisebox makes it look better than the original
+\renewcommand{\labelitemiii}{\raisebox{-0.15ex}{\Large{▪}}\hspace{0.15mm}}
+\renewcommand{\labelitemiv}{\raisebox{-0.42ex}{\LARGE{•}}}
+\let\olditemize\itemize
+\renewcommand{\itemize}{
+	\olditemize
+	\setlength{\topsep}{0pt}
+	\setlength{\partopsep}{0pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\itemsep}{0pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}
+	\setlength{\labelsep}{0.44cm}
+	\setlength{\labelwidth}{0.14cm}
+}
+\let\oldenumerate\enumerate
+\renewcommand{\enumerate}{
+	\oldenumerate
+	\setlength{\itemsep}{0pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}
+}
+
+\begin{document}
+% 17 pt line spacing, must be inside \begin{document}
+\setlength{\baselineskip}{17pt}
+\fontdimen2\font=0.64ex% inter word space
+
+\section{\XeTeX{} Rendering of Unordered Lists}
+\begin{itemize}
+	\item Auf der Registerkarte 'Einfügen' enthalten die Kataloge Elemente, die mit dem generellen Layout des Dokuments koordiniert werden sollten.
+	\item Mithilfe dieser Kataloge können Sie Tabellen, Kopfzeilen, Fußzeilen, Listen, Deckblätter und sonstige Dokumentbausteine einfügen.
+	\begin{itemize}
+		\item Wenn Sie Bilder, Tabellen oder Diagramme erstellen, werden diese auch mit dem aktuellen Dokumentlayout koordiniert.
+		\item Die Formatierung von markiertem Text im Dokumenttext kann auf einfache Weise geändert werden, indem Sie im Schnellformatvorlagen-Katalog auf der Registerkarte 'Start' ein Layout für den markierten Text auswählen.
+		\begin{itemize}
+			\item Text können Sie auch direkt mithilfe der anderen Steuerelemente auf der Registerkarte 'Start' formatieren.
+			\item Die meisten Steuerelemente ermöglichen die Auswahl zwischen dem Layout des aktuellen Designs oder der direkten Angabe eines Formats.
+			\begin{itemize}
+				\item Wählen Sie neue Designelemente auf der Registerkarte 'Seitenlayout' aus, um das generelle Layout des Dokuments zu ändern.
+				\item Verwenden Sie den Befehl zum Ändern des aktuellen Schnellformatvorlagen-Satzes, um die im Schnellformatvorlagen\hyph{}Katalog verfügbaren Formatvorlagen zu ändern.
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+% Since LaTeX knows 'only' four levels of lists, we stop after four
+
+\section{\XeTeX{} Rendering of Ordered Lists}
+\begin{enumerate}
+	\item Mithilfe dieser Kataloge können Sie Tabellen, Kopfzeilen, Fußzeilen, Listen, Deckblätter und sonstige Dokumentbausteine einfügen.
+	\item Wenn Sie Bilder, Tabellen oder Diagramme erstellen, werden diese auch mit dem aktuellen Dokumentlayout koordiniert.
+	\begin{enumerate}
+		\item Die Formatierung von markiertem Text im Dokumenttext kann auf einfache Weise geändert werden, indem Sie im Schnellformatvorlagen-Katalog auf der Registerkarte 'Start' ein Layout für den markierten Text auswählen.
+		\item Text können Sie auch direkt mithilfe der anderen Steuerelemente auf der Registerkarte 'Start' formatieren.
+		\begin{enumerate}
+			\item Die meisten Steuerelemente ermöglichen die Auswahl zwischen dem Layout des aktuellen Designs oder der direkten Angabe eines Formats.
+			\item Auf der Registerkarte 'Einfügen' enthalten die Kataloge Elemente, die mit dem generellen Layout des Dokuments koordiniert werden sollten.
+			\begin{enumerate}
+				\item Mithilfe dieser Kataloge können Sie Tabellen, Kopfzeilen, Fußzeilen, Listen, Deckblätter und sonstige Dokumentbausteine einfügen.
+				\item Wenn Sie Bilder, Tabellen oder Diagramme erstellen, werden diese auch mit dem aktuellen Dokumentlayout koordiniert.
+			\end{enumerate}
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+\end{document}
