@@ -1,3 +1,4 @@
 Known Issues with Lists
 =======================
 * Nested itemize lists will have some additional spacing between the current item of the parent list and the start of the nested list
+* Ordered lists have right-aligned labels which leads to overflows on the left side of the label when the label becomes wider (e.g. transition from "9." to "10."). May be solved by switching to using the enumitem package.

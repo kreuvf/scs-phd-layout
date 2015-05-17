@@ -23,10 +23,6 @@
 \usepackage[hang,flushmargin]{footmisc} 
 
 % Redefine lists
-\setlength{\leftmargini}{1.27cm} % Must be placed in preamble and outside list environment
-\setlength{\leftmarginii}{1.27cm} % Must be placed in preamble and outside list environment
-\setlength{\leftmarginiii}{1.27cm} % Must be placed in preamble and outside list environment
-\setlength{\leftmarginiv}{1.27cm} % Must be placed in preamble and outside list environment
 \renewcommand{\labelitemi}{\raisebox{-0.42ex}{\LARGE{•}}}
 \newfontfamily\myfont{Courier New} % Needed for bullet point of second level
 \renewcommand{\labelitemii}{{\raisebox{0.23ex}{{\myfont{o}}}}\hspace{-0.3mm}} % raisebox makes it look better than the original
@@ -34,6 +30,10 @@
 \renewcommand{\labelitemiv}{\raisebox{-0.42ex}{\LARGE{•}}}
 \let\olditemize\itemize
 \renewcommand{\itemize}{
+	\setlength{\leftmargini}{1.27cm} % Must be placed in preamble and outside list environment
+	\setlength{\leftmarginii}{1.27cm} % Must be placed in preamble and outside list environment
+	\setlength{\leftmarginiii}{1.27cm} % Must be placed in preamble and outside list environment
+	\setlength{\leftmarginiv}{1.27cm} % Must be placed in preamble and outside list environment
 	\olditemize
 	\setlength{\topsep}{0pt}
 	\setlength{\partopsep}{0pt}
@@ -44,13 +44,23 @@
 	\setlength{\labelsep}{0.44cm}
 	\setlength{\labelwidth}{0.14cm}
 }
+
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
 \let\oldenumerate\enumerate
 \renewcommand{\enumerate}{
+	\setlength{\leftmargini}{0.63cm}
 	\oldenumerate
+	\setlength{\topsep}{0pt}
+	\setlength{\partopsep}{0pt}
+	\setlength{\parskip}{0pt}
 	\setlength{\itemsep}{0pt}
 	\setlength{\parskip}{0pt}
 	\setlength{\parsep}{0pt}
+	\setlength{\labelsep}{0.35cm}
+	\setlength{\labelwidth}{0.14cm}
 }
+
+%\usepackage{enumitem} % Necessary to have labels of enums left-aligned. Must appear _after_ own list redefinitions!
 
 \begin{document}
 % 17 pt line spacing, must be inside \begin{document}
@@ -77,6 +87,7 @@
 % Since LaTeX knows 'only' four levels of lists, we stop after four
 
 \section{\XeTeX{} Rendering of Ordered Lists}
+This is a paragraph of text.
 \begin{enumerate}
 	\item Mithilfe dieser Kataloge können Sie Tabellen, Kopfzeilen, Fußzeilen, Listen, Deckblätter und sonstige Dokumentbausteine einfügen.
 	\item Wenn Sie Bilder, Tabellen oder Diagramme erstellen, werden diese auch mit dem aktuellen Dokumentlayout koordiniert.
